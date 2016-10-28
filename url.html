@@ -1430,11 +1430,8 @@ with an optional <a data-link-type="dfn" href="#concept-base-url">base URL</a> <
            <p>If <a data-link-type="dfn" href="#c">c</a> is "<code>%</code>" and <a data-link-type="dfn" href="#remaining">remaining</a> does
        not start with two <a data-link-type="dfn" href="#ascii-hex-digits">ASCII hex digits</a>, <a data-link-type="dfn" href="#syntax-violation">syntax violation</a>. </p>
           <li>
-           <p>If <a data-link-type="dfn" href="#c">c</a> is "<code>%</code>" and <a data-link-type="dfn" href="#remaining">remaining</a>, <a data-link-type="dfn" href="#ascii-lowercase">ASCII lowercased</a> starts
-       with "<code>2e</code>", append "<code>.</code>" to <var>buffer</var> and increase <var>pointer</var> by two. </p>
-          <li>
-           <p>Otherwise, <a data-link-type="dfn" href="#utf-8-percent-encode">UTF-8 percent encode</a> <a data-link-type="dfn" href="#c">c</a> using the <a data-link-type="dfn" href="#default-encode-set">default encode set</a>,
-       and append the result to <var>buffer</var>. </p>
+           <p><a data-link-type="dfn" href="#utf-8-percent-encode">UTF-8 percent encode</a> <a data-link-type="dfn" href="#c">c</a> using the <a data-link-type="dfn" href="#default-encode-set">default encode set</a>, and append
+       the result to <var>buffer</var>. </p>
          </ol>
        </ol>
       <dt><dfn data-dfn-type="dfn" data-noexport="" id="cannot-be-a-base-url-path-state">cannot-be-a-base-URL path state<a class="self-link" href="#cannot-be-a-base-url-path-state"></a></dfn> 
